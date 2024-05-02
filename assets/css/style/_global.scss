@@ -1,0 +1,33 @@
+body {
+  background-color: #fafafa;
+  background-image: url("../../images/bg-pattern.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-container {
+  position: relative;
+  max-width: 450px;
+  background-color: #fff;
+  min-height: 100vh;
+  margin-inline: auto;
+  box-shadow: 1px 0 30px 0 #00000010;
+}
+
+.hero-banner {
+  background-image: url("../../images/bg-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  overflow: hidden;
+
+  .title-hero {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-top: 125px;
+  }
+}

@@ -1,0 +1,125 @@
+body {
+  background-color: #fafafa;
+  background-image: url("../../images/bg-pattern.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-container {
+  position: relative;
+  max-width: 450px;
+  background-color: #fff;
+  min-height: 100vh;
+  margin-inline: auto;
+  box-shadow: 1px 0 30px 0 rgba(0, 0, 0, 0.062745098);
+}
+
+.hero-banner {
+  background-image: url("../../images/bg-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  overflow: hidden;
+}
+.hero-banner .title-hero {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin-top: 125px;
+}
+
+.card-info {
+  background-color: #006cb8;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: -20%;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card-info img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60%;
+}
+.card-info .info-name {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+.card-info .total-assets {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+.card-info .info-assets {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+.content-menu {
+  width: 95%;
+}
+.content-menu a {
+  color: inherit;
+}
+.content-menu a .card {
+  border-radius: 12px;
+}
+.content-menu a .card img.image-content-menu {
+  width: 80%;
+}
+
+.card-search {
+  background-color: #ffffff;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: -40px;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.content-asset-list {
+  width: 95%;
+}
+.content-asset-list a {
+  color: inherit;
+}
+.content-asset-list a .card {
+  border-radius: 12px;
+}
+.content-asset-list a .card .asset-value {
+  font-weight: bold;
+}
+
+.navbar-header {
+  position: fixed;
+  z-index: 1;
+}
+.navbar-header .logo-header {
+  width: 200px;
+}
+
+.footer-body {
+  margin-top: 60px;
+}
+.footer-body .img-footer-left {
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+}
+.footer-body .img-footer-right {
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}/*# sourceMappingURL=main.css.map */

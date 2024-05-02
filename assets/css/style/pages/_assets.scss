@@ -1,0 +1,25 @@
+.card-search {
+  background-color: #ffffff;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: -40px;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.content-asset-list {
+  width: 95%;
+
+  a {
+    color: inherit;
+
+    .card {
+      border-radius: 12px;
+
+      .asset-value {
+        font-weight: bold;
+      }
+    }
+  }
+}
