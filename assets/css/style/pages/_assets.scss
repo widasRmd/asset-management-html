@@ -3,8 +3,8 @@
   width: 90%;
   margin-inline: auto;
   margin-top: -40px;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 15px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -13,13 +13,49 @@
 
   a {
     color: inherit;
+  }
 
-    .card {
-      border-radius: 12px;
+  .card {
+    border-radius: 15px;
+    padding: 15px;
 
-      .asset-value {
-        font-weight: bold;
+    .asset-title {
+      font-weight: bold;
+      font-size: 14px;
+      font-weight: 700;
+      color: black;
+    }
+
+    .asset-value {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    table {
+      td {
+        padding: 5px;
+      }
+
+      .btn {
+        font-size: 12px;
       }
     }
   }
+
+  .tabs-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .form-control:disabled {
+    background-color: #fcfcfc;
+  }
+
+  .form-select:disabled {
+    background-color: #fcfcfc;
+  }
+}
+
+.offcanvas.offcanvas-bottom {
+  height: auto;
 }

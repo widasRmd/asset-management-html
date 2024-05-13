@@ -26,24 +26,56 @@
 
         <!-- Header start -->
         <div class="navbar-header">
-            <div class="row">
-                <div class="col-6">
+            <div class="row justify-content-between">
+                <div class="col">
                     <a href="/">
                         <img src="assets/images/logo_pertamina_lubricants_frame.png" class="logo-header"
                             alt="Asset Management">
                     </a>
                 </div>
-                <div class="col-6 align-self-end">
-                    <a href="/admin" class="btn btn-primary rounded-pill px-3">Dashboard</a>
-                    <a href="login.html" class="btn btn-danger rounded-pill ms-1"><i class="mdi mdi-login-variant"></i>
-                    </a>
+                <div class="col align-self-center d-flex justify-content-end mt-2">
+                    <li class="dropdown notification-list me-2" style="list-style-type: none;">
+                        <a class="nav-link dropdown-toggle arrow-none h-100" href="/notification.html" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i class="ri-notification-3-line font-22"></i>
+                            <span class="noti-icon-badge"></span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown" style="list-style-type: none;">
+                        <a class="nav-link dropdown-toggle arrow-none me-3" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <span class="account-user-avatar">
+                                <img src="../assets/images/users/user.png" alt="user-image" width="35"
+                                    class="rounded-circle">
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown me-3">
+                            <!-- item-->
+                            <div class=" dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Hi, John Doe</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <i class="mdi mdi-account-circle me-1"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="/login.html" class="dropdown-item">
+                                <i class="mdi mdi-logout me-1"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
                 </div>
             </div>
         </div>
         <!-- Header end -->
 
         <!-- Hero start -->
-        <div class="hero-banner"></div>
+        <div class="hero-banner" style="background-image: url('assets/images/bg-hero.jpg');"></div>
         <!-- Hero end -->
 
         <!-- Card info start -->
@@ -77,23 +109,120 @@
 
         <!-- Content start -->
         <div class="container content-menu">
-            <div class="row mb-5">
-                <div class="col-6">
-                    <a href="assets-list.html">
+            <div class="row my-2">
+                <div class="col">
+                    <div class="title-primary">
+                        My Menu
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-4">
+                    <a href="aset-tetap.html">
                         <div class="card card-body text-center align-items-center">
-                            <img src="assets/images/illustration_assets.png" class="image-content-menu mb-2" alt="">
-                            <div class="title-card">
-                                Assets
+                            <img src="assets/images/icons/icon-01.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Aset Tetap
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
+                    <a href="/pemeriksaan-fisik.html">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-02.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Pemeriksaan Fisik
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
                     <a href="#">
                         <div class="card card-body text-center align-items-center">
-                            <img src="assets/images/illustration_barcode.png" class="image-content-menu mb-2" alt="">
-                            <div class="title-card">
-                                Scanner
+                            <img src="assets/images/icons/icon-03.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Tanah & Bangunan
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-04.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Kendaraan
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-05.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                BBM & Non BBM
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-06.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Furniture
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-07.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Office Equipment
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-08.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                RTK
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-09.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Konsumsi
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-10.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                IT
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <div class="card card-body text-center align-items-center">
+                            <img src="assets/images/icons/icon-11.png" class="image-content-menu mb-1" alt="">
+                            <div class="title-card-menu">
+                                Sewa
                             </div>
                         </div>
                     </a>
@@ -111,15 +240,21 @@
         </div>
         <!-- Footer end -->
 
+        <!-- Button Scanner start -->
+        <a href="" class="button-scanner d-flex justify-content-center">
+            <img class="align-self-center" src="assets/images/ic-scanner.png" width="40px" height="40" alt="">
+        </a>
+        <!-- Button Scanner end -->
+
     </div>
     <!-- Container end -->
 
 
     <!-- Vendor js -->
-    <!-- <script src="assets/js/vendor.min.js"></script> -->
+    <script src="assets/js/vendor.min.js"></script>
 
     <!-- App js -->
-    <!-- <script src="assets/js/app.min.js"></script> -->
+    <script src="assets/js/app.min.js"></script>
 
 </body>
 

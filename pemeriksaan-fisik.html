@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pemeriksaan Fisik | Asset Management | Pertamina Lubricants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Asset Management | Pertamina Lubricants" name="description" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="assets/css/style/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icons css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Container start -->
+    <div class="content-container">
+
+        <!-- Header start -->
+        <div class="navbar-primary">
+            <div class="row justify-content-between h-100">
+                <div class="col d-flex align-self-center ms-3">
+                    <a href="javascript:history.back()">
+                        <img src="assets/images/arrow-left.png" class="icon-back" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="assets/images/logo-pertamina-lubricants.png" class="logo-header ms-3"
+                            alt="Asset Management">
+                    </a>
+                </div>
+                <div class="col align-self-center d-flex justify-content-end">
+                    <a class="me-2" type="button" data-bs-toggle="modal" data-bs-target="#downloadModal"
+                        aria-controls="offcanvasBottom">
+                        <img src="assets/images/svg/btn-download.svg" width="36px" alt="">
+                    </a>
+                    <a href="/add-pemeriksaan-fisik.html" class="me-3">
+                        <img src="assets/images/svg/btn-add.svg" width="36px" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Header end -->
+
+        <!-- Content start -->
+        <div class="container content-asset-list">
+            <div class="row my-2 px-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pemerikasan Fisik</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- Card year start -->
+            <a href="/pemeriksaan-fisik-listing.html">
+                <div class="card card-body shadow-none border">
+                    <div class="row">
+                        <div class="col">
+                            <div class="asset-title">Pemerikasan Fisik 2023</div>
+                            <div class="asset-value">
+                                1536 Items
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="asset-value text-end">
+                                12 Juli 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/pemeriksaan-fisik-listing.html">
+                <div class="card card-body shadow-none border">
+                    <div class="row">
+                        <div class="col">
+                            <div class="asset-title">Pemerikasan Fisik 2022</div>
+                            <div class="asset-value">
+                                1536 Items
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="asset-value text-end">
+                                12 Juli 2022
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/pemeriksaan-fisik-listing.html">
+                <div class="card card-body shadow-none border">
+                    <div class="row">
+                        <div class="col">
+                            <div class="asset-title">Pemerikasan Fisik 2021</div>
+                            <div class="asset-value">
+                                1536 Items
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="asset-value text-end">
+                                12 Juli 2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Card year end -->
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer start -->
+        <div class="footer-body">
+            <div class="row justify-content-between">
+                <img src="assets/images/svg/logo-mypertamina-01.svg" class="img-footer-left" alt="">
+                <img src="assets/images/svg/logo-mypertamina-02.svg" class="img-footer-right" alt="">
+            </div>
+        </div>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Container end -->
+
+    <!-- Download Modal start -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title font-14" id="myCenterModalLabel">Download Report</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-2">
+                        <div class="mb-3">
+                            <label for="filter-year" class="form-label">Tahun</label>
+                            <select class="form-select form-control-light" id="filter-year">
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary w-100">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- Download Modal end -->
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- Dropzone File Upload js -->
+    <script src="assets/vendor/dropzone/min/dropzone.min.js"></script>
+
+    <!-- File Upload Demo js -->
+    <script src="assets/js/ui/component.fileupload.js"></script>
+
+</body>
+
+</html>

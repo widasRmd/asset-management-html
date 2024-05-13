@@ -1,5 +1,5 @@
 body {
-  background-color: #fafafa;
+  background-color: #fff000;
   background-image: url("../../images/bg-pattern.jpg");
   background-position: center;
   background-size: cover;
@@ -7,28 +7,96 @@ body {
   background-attachment: fixed;
 }
 
+.title-primary {
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.title-secondary {
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #898989;
+}
+
 .content-container {
   position: relative;
   max-width: 450px;
-  background-color: #fff;
+  background-color: white;
   min-height: 100vh;
   margin-inline: auto;
   box-shadow: 1px 0 30px 0 rgba(0, 0, 0, 0.062745098);
 }
 
 .hero-banner {
-  background-image: url("../../images/bg-hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 225px;
   overflow: hidden;
 }
 .hero-banner .title-hero {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.4em;
   font-weight: 700;
-  margin-top: 125px;
+  margin-top: 80px;
+}
+
+.button-scanner {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  border-radius: 200px;
+  background-color: #007ec4;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.2509803922);
+}
+
+.card {
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.card .title-card {
+  font-size: 14px;
+  font-weight: 700;
+}
+.card .link-detail {
+  font-size: 10px;
+  font-weight: 400;
+}
+.card .text-card {
+  font-size: 12px;
+  font-weight: 400;
+}
+.card .time {
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.card-secondary {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.breadcrumb {
+  padding-block: 5px;
+}
+.breadcrumb .breadcrumb-item {
+  font-size: 12px;
+}
+
+form .form-label {
+  font-size: 14px;
+}
+form .form-control {
+  font-size: 14px;
+}
+form .form-select {
+  font-size: 14px;
 }
 
 .card-info {
@@ -37,7 +105,7 @@ body {
   margin-inline: auto;
   margin-top: -60px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
 }
 .card-info img {
@@ -67,15 +135,26 @@ body {
 
 .content-menu {
   width: 95%;
+  margin-bottom: 120px;
 }
 .content-menu a {
   color: inherit;
 }
 .content-menu a .card {
-  border-radius: 12px;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 0;
+  height: 100%;
 }
 .content-menu a .card img.image-content-menu {
   width: 80%;
+}
+.content-menu a .card .title-card-menu {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
 }
 
 .card-search {
@@ -83,8 +162,8 @@ body {
   width: 90%;
   margin-inline: auto;
   margin-top: -40px;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 15px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -94,19 +173,74 @@ body {
 .content-asset-list a {
   color: inherit;
 }
-.content-asset-list a .card {
-  border-radius: 12px;
+.content-asset-list .card {
+  border-radius: 15px;
+  padding: 15px;
 }
-.content-asset-list a .card .asset-value {
+.content-asset-list .card .asset-title {
   font-weight: bold;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+.content-asset-list .card .asset-value {
+  font-size: 12px;
+  font-weight: 400;
+}
+.content-asset-list .card table td {
+  padding: 5px;
+}
+.content-asset-list .card table .btn {
+  font-size: 12px;
+}
+.content-asset-list .tabs-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+.content-asset-list .form-control:disabled {
+  background-color: #fcfcfc;
+}
+.content-asset-list .form-select:disabled {
+  background-color: #fcfcfc;
+}
+
+.offcanvas.offcanvas-bottom {
+  height: auto;
 }
 
 .navbar-header {
-  position: fixed;
+  position: absolute;
   z-index: 1;
+  width: 100%;
 }
 .navbar-header .logo-header {
-  width: 200px;
+  width: 100%;
+  max-width: 220px;
+}
+.navbar-header .notification-list {
+  background-color: #fff;
+  padding-inline: 6px;
+  border-radius: 200px;
+  border: solid 1px #ebebeb;
+}
+
+.navbar-primary {
+  background-color: #fff;
+  border-bottom: solid 1px #ebebeb;
+  height: 75px;
+}
+.navbar-primary .logo-header {
+  width: 100%;
+  max-width: 115px;
+}
+.navbar-primary .icon-back {
+  width: 20px;
+}
+.navbar-primary .notification-list {
+  background-color: #fff;
+  padding-inline: 6px;
+  border-radius: 200px;
+  border: solid 1px #ebebeb;
 }
 
 .footer-body {

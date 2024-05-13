@@ -1,5 +1,5 @@
 body {
-  background-color: #fafafa;
+  background-color: #fff000;
   background-image: url("../../images/bg-pattern.jpg");
   background-position: center;
   background-size: cover;
@@ -7,27 +7,104 @@ body {
   background-attachment: fixed;
 }
 
+.title-primary {
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.title-secondary {
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #898989;
+}
+
 .content-container {
   position: relative;
   max-width: 450px;
-  background-color: #fff;
+  background-color: white;
   min-height: 100vh;
   margin-inline: auto;
   box-shadow: 1px 0 30px 0 #00000010;
 }
 
 .hero-banner {
-  background-image: url("../../images/bg-hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 225px;
   overflow: hidden;
 
   .title-hero {
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.4em;
     font-weight: 700;
-    margin-top: 125px;
+    margin-top: 80px;
+  }
+}
+
+.button-scanner {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  border-radius: 200px;
+  background-color: #007ec4;
+  box-shadow: 0px 2px 20px 1px #00000040;
+}
+
+.card {
+  border-radius: 20px;
+  margin-bottom: 15px;
+
+  .title-card {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .link-detail {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .text-card {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .time {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
+
+.card-secondary {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.breadcrumb {
+  padding-block: 5px;
+
+  .breadcrumb-item {
+    font-size: 12px;
+  }
+}
+
+form {
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .form-select {
+    font-size: 14px;
   }
 }

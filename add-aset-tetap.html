@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tambah Aset Tetap | Asset Management | Pertamina Lubricants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Asset Management | Pertamina Lubricants" name="description" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="assets/css/style/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icons css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Container start -->
+    <div class="content-container">
+
+        <!-- Header start -->
+        <div class="navbar-primary">
+            <div class="row justify-content-between h-100">
+                <div class="col d-flex align-self-center ms-3">
+                    <a href="javascript:history.back()">
+                        <img src="assets/images/arrow-left.png" class="icon-back" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="assets/images/logo-pertamina-lubricants.png" class="logo-header ms-3"
+                            alt="Asset Management">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Header end -->
+
+        <!-- Content start -->
+        <div class="container content-asset-list">
+            <div class="row my-2 px-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="/aset-tetap.html">Aset Tetap</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tambah Aset Tetap</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- Tabs form contact start -->
+            <div class="tab-pane show active" id="add-aset-tabs">
+                <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
+                    <li class="nav-item">
+                        <a href="#single" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
+                            <span class="tabs-title">Single Upload</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#multiple" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
+                            <span class="tabs-title">Batch Upload</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="single">
+                        <form class="p-2">
+                            <div class="mb-3">
+                                <label for="asset-name" class="form-label">Asset Name</label>
+                                <input type="text" class="form-control" id="asset-name" placeholder="Enter asset name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-description" class="form-label">Asset Description</label>
+                                <input type="text" class="form-control" id="asset-description"
+                                    placeholder="Enter asset description">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="acquis" class="form-label">Acquis Val</label>
+                                <input type="number" class="form-control" id="acquis" placeholder="0">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="accum-dep" class="form-label">Accum Dep</label>
+                                <input type="number" class="form-control" id="accum-dep" placeholder="0">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="book-vol" class="form-label">Book Vol</label>
+                                <input type="number" class="form-control" id="book-vol" placeholder="0">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Asset Condition</label>
+                                <select class="form-select" id="asset-condition">
+                                    <option>- Select Condition -</option>
+                                    <option>Condition A</option>
+                                    <option>Condition B</option>
+                                    <option>Condition C</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Plant</label>
+                                <select class="form-select" id="asset-plant">
+                                    <option>- Select -</option>
+                                    <option>Plant A</option>
+                                    <option>Plant B</option>
+                                    <option>Plant C</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-location" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="asset-location"
+                                    placeholder="Enter location">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="room" class="form-label">Room</label>
+                                <input type="text" class="form-control" id="room" placeholder="Enter room">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-photos" class="form-label">Foto</label>
+                                <div action="/" method="post" class="dropzone" id="asset-photos" data-plugin="dropzone"
+                                    data-previews-container="#file-previews-single"
+                                    data-upload-preview-template="#uploadPreview">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                    </div>
+
+                                    <div class="dz-message needsclick">
+                                        <i class="h1 text-muted ri-upload-cloud-2-line"></i>
+                                        <h5>Drop files here or click to upload.</h5>
+                                    </div>
+                                </div>
+
+                                <!-- Preview -->
+                                <div class="dropzone-previews mt-3" id="file-previews-single"></div>
+
+                                <div class="d-none" id="uploadPreview">
+                                    <div class="p-1">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light"
+                                                    alt="">
+                                            </div>
+                                            <div class="col ps-0">
+                                                <a href="javascript:void(0);" class="text-muted fw-bold"
+                                                    data-dz-name></a>
+                                                <p class="mb-0" data-dz-size></p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <!-- Button -->
+                                                <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
+                                                    <i class="ri-close-line"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="building" class="form-label">Building</label>
+                                <input type="text" class="form-control" id="building" placeholder="Enter building">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="floor" class="form-label">Floor</label>
+                                <input type="text" class="form-control" id="floor" placeholder="Enter floor">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="brand" class="form-label">Brand</label>
+                                <input type="text" class="form-control" id="brand" placeholder="Enter brand">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="type" class="form-label">Type</label>
+                                <input type="text" class="form-control" id="type" placeholder="Enter type">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="dimension" class="form-label">Dimension</label>
+                                <input type="text" class="form-control" id="dimension" placeholder="Enter dimension">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="capacity" class="form-label">Capacity</label>
+                                <input type="text" class="form-control" id="capacity" placeholder="Enter capacity">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-pic" class="form-label">Asset PIC</label>
+                                <input type="text" class="form-control" id="asset-pic" placeholder="Enter asset PIC">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter address">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-keterangan" class="form-label">Keterangan</label>
+                                <textarea class="form-control" id="asset-keterangan" rows="3"></textarea>
+                            </div>
+
+                            <div class="row g-2 mb-3">
+                                <div class="col">
+                                    <button onclick="history.back()" type="button" class="btn btn-light w-100"
+                                        data-dismiss="modal">Cancel</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary w-100">Create</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane" id="multiple">
+                        <form action="/" method="post" class="dropzone" id="fileUploadBatch" data-plugin="dropzone"
+                            data-previews-container="#file-previews"
+                            data-upload-preview-template="#uploadPreviewTemplate">
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+
+                            <div class="dz-message needsclick">
+                                <i class="h1 text-muted ri-upload-cloud-2-line"></i>
+                                <h4>Drop files here or click to upload.</h4>
+                                <span class="text-muted font-13">
+                                    upload a file in the specified with <strong>.xlsx</strong> format.
+                                </span>
+                            </div>
+                        </form>
+
+                        <!-- Preview -->
+                        <div class="dropzone-previews mt-3" id="file-previews"></div>
+
+                        <div class="d-none" id="uploadPreviewTemplate">
+                            <div class="p-2">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
+                                    </div>
+                                    <div class="col ps-0">
+                                        <a href="javascript:void(0);" class="text-muted fw-bold" data-dz-name></a>
+                                        <p class="mb-0" data-dz-size></p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <!-- Button -->
+                                        <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
+                                            <i class="ri-close-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2 mb-5 mt-2">
+                            <div class="col">
+                                <button onclick="history.back()" type="button" class="btn btn-light w-100"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary w-100">Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs form contact end -->
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer start -->
+        <div class="footer-body">
+            <div class="row justify-content-between">
+                <img src="assets/images/svg/logo-mypertamina-01.svg" class="img-footer-left" alt="">
+                <img src="assets/images/svg/logo-mypertamina-02.svg" class="img-footer-right" alt="">
+            </div>
+        </div>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Container end -->
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- Dropzone File Upload js -->
+    <script src="assets/vendor/dropzone/min/dropzone.min.js"></script>
+
+    <!-- File Upload Demo js -->
+    <script src="assets/js/ui/component.fileupload.js"></script>
+
+</body>
+
+</html>

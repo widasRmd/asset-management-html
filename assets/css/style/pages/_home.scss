@@ -4,7 +4,7 @@
   margin-inline: auto;
   margin-top: -60px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
 
   img {
@@ -38,15 +38,27 @@
 
 .content-menu {
   width: 95%;
+  margin-bottom: 120px;
 
   a {
     color: inherit;
 
     .card {
-      border-radius: 12px;
+      border-radius: 20px;
+      padding: 15px;
+      margin-bottom: 0;
+      height: 100%;
 
       img.image-content-menu {
         width: 80%;
+      }
+
+      .title-card-menu {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
       }
     }
   }

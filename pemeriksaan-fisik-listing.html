@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Listing Pemeriksaan Fisik | Asset Management | Pertamina Lubricants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Asset Management | Pertamina Lubricants" name="description" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="assets/css/style/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icons css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Container start -->
+    <div class="content-container">
+
+        <!-- Header start -->
+        <div class="navbar-primary">
+            <div class="row justify-content-between h-100">
+                <div class="col d-flex align-self-center ms-3">
+                    <a href="javascript:history.back()">
+                        <img src="assets/images/arrow-left.png" class="icon-back" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="assets/images/logo-pertamina-lubricants.png" class="logo-header ms-3"
+                            alt="Asset Management">
+                    </a>
+                </div>
+                <div class="col align-self-center d-flex justify-content-end">
+                    <a class="me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom">
+                        <img src="assets/images/svg/btn-filter.svg" width="36px" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Header end -->
+
+        <!-- Content start -->
+        <div class="container content-asset-list">
+            <div class="row my-2 px-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/pemeriksaan-fisik.html">Pemerikasan Fisik</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">List Data</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- Tabs form contact start -->
+            <div class="tab-pane show active" id="add-aset-tabs">
+                <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
+                    <li class="nav-item">
+                        <a href="#done" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+                            <span class="tabs-title">Survey Completed</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#progress" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0 active">
+                            <span class="tabs-title">Not Survey Yet</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="done">
+                        <div class="row my-2 px-1">
+                            <div class="col">
+                                <div class="title-secondary">
+                                    Lokasi : <strong>All</strong>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="title-secondary">
+                                    Tahun : <strong>All</strong>
+                                </div>
+                            </div>
+                            <div class="col text-end">
+                                <div class="title-secondary">
+                                    Total (245)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Asset Item -->
+                        <a href="/aset-detail.html">
+                            <div class="card card-body">
+                                <div class="asset-item d-flex">
+                                    <table class="table table-centered table-borderless mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="asset-title">INV-00505</td>
+                                                <td class="text-end">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-soft-success rounded-pill">
+                                                        Bisa Digunakan
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Asset Description</td>
+                                                <td class="asset-value text-end">TV 21"</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Acquis Val</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Accum Dep</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Book Vol</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Last Update</td>
+                                                <td class="asset-value text-end">30 April 2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Asset Item -->
+                        <a href="/aset-detail.html">
+                            <div class="card card-body">
+                                <div class="asset-item d-flex">
+                                    <table class="table table-centered table-borderless mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="asset-title">INV-00505</td>
+                                                <td class="text-end">
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-soft-danger rounded-pill">
+                                                        Rusak
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Asset Description</td>
+                                                <td class="asset-value text-end">TV 21"</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Acquis Val</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Accum Dep</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Book Vol</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Last Update</td>
+                                                <td class="asset-value text-end">30 April 2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tab-pane show active" id="progress">
+                        <div class="row my-2 px-1">
+                            <div class="col">
+                                <div class="title-secondary">
+                                    Lokasi : <strong>All</strong>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="title-secondary">
+                                    Tahun : <strong>All</strong>
+                                </div>
+                            </div>
+                            <div class="col text-end">
+                                <div class="title-secondary">
+                                    Total (245)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Asset Item -->
+                        <a href="/aset-detail-edit.html">
+                            <div class="card card-body shadow-none border">
+                                <div class="asset-item d-flex">
+                                    <table class="table table-centered table-borderless mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="asset-title">INV-00505</td>
+                                                <td class="text-end"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Asset Description</td>
+                                                <td class="asset-value text-end">TV 21"</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Acquis Val</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Accum Dep</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Book Vol</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Last Update</td>
+                                                <td class="asset-value text-end">30 April 2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Asset Item -->
+                        <a href="/aset-detail-edit.html">
+                            <div class="card card-body shadow-none border">
+                                <div class="asset-item d-flex">
+                                    <table class="table table-centered table-borderless mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="asset-title">INV-00505</td>
+                                                <td class="text-end"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Asset Description</td>
+                                                <td class="asset-value text-end">TV 21"</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Acquis Val</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Accum Dep</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Book Vol</td>
+                                                <td class="asset-value text-end">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="asset-value">Last Update</td>
+                                                <td class="asset-value text-end">30 April 2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs form contact end -->
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer start -->
+        <div class="footer-body">
+            <div class="row justify-content-between">
+                <img src="assets/images/svg/logo-mypertamina-01.svg" class="img-footer-left" alt="">
+                <img src="assets/images/svg/logo-mypertamina-02.svg" class="img-footer-right" alt="">
+            </div>
+        </div>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Container end -->
+
+    <!-- filter offcanvas start-->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header" style="border-bottom: solid 1px #f1f1f1;">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> <!-- end offcanvas-header-->
+
+        <div class="offcanvas-body">
+            <form class="p-2">
+                <div class="mb-3">
+                    <label for="filter-year" class="form-label">Tahun</label>
+                    <select class="form-select form-control-light" id="filter-year">
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="filter-location" class="form-label">Lokasi</label>
+                    <select class="form-select form-control-light" id="filter-location">
+                        <option selected>All Location</option>
+                        <option>Lokasi 1</option>
+                        <option>Lokasi 2</option>
+                        <option>Lokasi 3</option>
+                        <option>Lokasi 4</option>
+                    </select>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary w-100">Submit</button>
+                </div>
+            </form>
+        </div> <!-- end offcanvas-body-->
+    </div>
+    <!-- filter offcanvas end-->
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- Dropzone File Upload js -->
+    <script src="assets/vendor/dropzone/min/dropzone.min.js"></script>
+
+    <!-- File Upload Demo js -->
+    <script src="assets/js/ui/component.fileupload.js"></script>
+
+</body>
+
+</html>

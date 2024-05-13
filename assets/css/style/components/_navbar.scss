@@ -1,8 +1,39 @@
 .navbar-header {
-  position: fixed;
+  position: absolute;
   z-index: 1;
+  width: 100%;
 
   .logo-header {
-    width: 200px;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .notification-list {
+    background-color: #fff;
+    padding-inline: 6px;
+    border-radius: 200px;
+    border: solid 1px #ebebeb;
+  }
+}
+
+.navbar-primary {
+  background-color: #fff;
+  border-bottom: solid 1px #ebebeb;
+  height: 75px;
+
+  .logo-header {
+    width: 100%;
+    max-width: 115px;
+  }
+
+  .icon-back {
+    width: 20px;
+  }
+
+  .notification-list {
+    background-color: #fff;
+    padding-inline: 6px;
+    border-radius: 200px;
+    border: solid 1px #ebebeb;
   }
 }
