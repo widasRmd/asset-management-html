@@ -14046,8 +14046,8 @@ html[data-theme="dark"] #light-dark-mode .ri-moon-line::before {
 .notification-list .noti-icon-badge {
   display: inline-block;
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 22px;
+  right: 1px;
   border-radius: 50%;
   height: 7px;
   width: 7px;

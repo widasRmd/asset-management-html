@@ -99,6 +99,10 @@ form .form-select {
   font-size: 14px;
 }
 
+.image-grayscale {
+  filter: grayscale(1);
+}
+
 .card-info {
   background-color: #006cb8;
   width: 90%;

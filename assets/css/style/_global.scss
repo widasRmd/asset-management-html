@@ -108,3 +108,7 @@ form {
     font-size: 14px;
   }
 }
+
+.image-grayscale {
+  filter: grayscale(1);
+}
