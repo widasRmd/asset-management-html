@@ -3,24 +3,27 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Asset Management | Pertamina Lubricants</title>
+    <title>Aset Tetap | Pertamina Lubricants</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Asset Management | Pertamina Lubricants" name="description" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico">
-
-    <!-- Daterangepicker css -->
-    <link rel="stylesheet" href="../assets/vendor/daterangepicker/daterangepicker.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico">
 
     <!-- Theme Config Js -->
-    <script src="../assets/js/hyper-config.js"></script>
+    <script src="../../assets/js/hyper-config.js"></script>
 
     <!-- App css -->
-    <link href="../assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="../../assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
 
     <!-- Icons css -->
-    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Datatable css -->
+    <link href="../../assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="../../assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet"
+        type="text/css" />
 </head>
 
 <body>
@@ -37,20 +40,20 @@
                         <!-- Logo light -->
                         <a href="/admin" class="logo-light">
                             <span class="logo-lg">
-                                <img src="../assets/images/logo.png" alt="logo">
+                                <img src="../../assets/images/logo.png" alt="logo">
                             </span>
                             <span class="logo-sm">
-                                <img src="../assets/images/logo-sm.png" alt="small logo">
+                                <img src="../../assets/images/logo-sm.png" alt="small logo">
                             </span>
                         </a>
 
                         <!-- Logo Dark -->
                         <a href="/admin" class="logo-dark">
                             <span class="logo-lg">
-                                <img src="../assets/images/logo-dark.png" alt="dark logo">
+                                <img src="../../assets/images/logo-dark.png" alt="dark logo">
                             </span>
                             <span class="logo-sm">
-                                <img src="../assets/images/logo-dark-sm.png" alt="small logo">
+                                <img src="../../assets/images/logo-dark-sm.png" alt="small logo">
                             </span>
                         </a>
                     </div>
@@ -254,7 +257,7 @@
                         <a class="nav-link dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#"
                             role="button" aria-haspopup="false" aria-expanded="false">
                             <span class="account-user-avatar">
-                                <img src="../assets/images/users/avatar-3.jpg" alt="user-image" width="32"
+                                <img src="../../assets/images/users/avatar-3.jpg" alt="user-image" width="32"
                                     class="rounded-circle">
                             </span>
                             <span class="d-lg-flex flex-column gap-1 d-none">
@@ -304,20 +307,20 @@
             <!-- Brand Logo Light -->
             <a href="/admin" class="logo logo-light">
                 <span class="logo-lg">
-                    <img src="../assets/images/logo.png" alt="logo">
+                    <img src="../../assets/images/logo.png" alt="logo">
                 </span>
                 <span class="logo-sm">
-                    <img src="../assets/images/logo-sm.png" alt="small logo">
+                    <img src="../../assets/images/logo-sm.png" alt="small logo">
                 </span>
             </a>
 
             <!-- Brand Logo Dark -->
             <a href="/admin" class="logo logo-dark">
                 <span class="logo-lg">
-                    <img src="../assets/images/logo-dark.png" alt="dark logo">
+                    <img src="../../assets/images/logo-dark.png" alt="dark logo">
                 </span>
                 <span class="logo-sm">
-                    <img src="../assets/images/logo-dark-sm.png" alt="small logo">
+                    <img src="../../assets/images/logo-dark-sm.png" alt="small logo">
                 </span>
             </a>
 
@@ -338,7 +341,7 @@
                 <ul class="side-nav">
 
                     <li class="side-nav-item">
-                        <a href="/admin/" class="side-nav-link">
+                        <a href="/admin" class="side-nav-link">
                             <i class="uil-home-alt"></i>
                             <span> Dashboards </span>
                         </a>
@@ -463,157 +466,268 @@
                 <!-- Start Content-->
                 <div class="container-fluid">
 
+                    <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box">
-                                <div class="page-title-right d-block">
-                                    <div class="d-flex">
-                                        <a href="javascript: void(0);" class="btn btn-primary ms-2">
-                                            <i class="mdi mdi-autorenew"></i>
-                                        </a>
-                                        <a href="#filterCollapse" class="btn btn-primary ms-1" data-bs-toggle="collapse"
-                                            aria-expanded="false" aria-controls="filterCollapse">
-                                            <i class="mdi mdi-filter-variant"></i>
-                                            Filter
-                                        </a>
-                                    </div>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Aset Tetap</li>
+                                    </ol>
                                 </div>
-                                <h4 class="page-title">Dashboard</h4>
+                                <h4 class="page-title">Aset Tetap</h4>
                             </div>
                         </div>
                     </div>
+                    <!-- end page title -->
 
-                    <!-- Filter start -->
-                    <div class="row collapse hide" id="filterCollapse">
-                        <div class="col">
-                            <div class="card card-body">
-                                <form>
-                                    <div class="row g-2 mb-2">
-                                        <div class="col-md-6 col-xl-3 mb-2">
-                                            <label for="date-from" class="form-label">Periode</label>
-                                            <input class="form-control" id="date-from" type="date" name="date-from">
+                    <!-- Table Start -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-2">
+                                        <div class="col-sm-5">
+                                            <a href="javascript:void(0);" class="btn btn-success mb-2"><i
+                                                    class="mdi mdi-plus-circle me-2"></i>Tambah Aset</a>
                                         </div>
-
-                                        <div class="col-md-6 col-xl-3 mb-2">
-                                            <label for="date-to" class="form-label">To</label>
-                                            <input class="form-control" id="date-to" type="date" name="date-to">
-                                        </div>
-
-                                        <div class="col-md-6 col-xl-3 mb-2">
-                                            <label for="select-plan" class="form-label">Plant</label>
-                                            <select class="form-select" id="select-plant">
-                                                <option selected>Select Plant</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 col-xl-3 mb-2">
-                                            <label for="select-location" class="form-label">Location</label>
-                                            <select class="form-select" id="select-location">
-                                                <option selected>Location</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="nav justify-content-sm-end">
+                                                <a href="#filterCollapse" class="nav-item btn btn-primary mb-2 me-1"
+                                                    data-bs-toggle="tab" aria-expanded="false"
+                                                    aria-controls="filterCollapse">
+                                                    <i class="mdi mdi-filter-variant"></i>
+                                                    Filter
+                                                </a>
+                                                <a href="#importCollapse" class="nav-item btn btn-light mb-2 me-1"
+                                                    data-bs-toggle="tab" aria-expanded="false">Import</a>
+                                                <a href="#exportCollapse" class="nav-item btn btn-light mb-2"
+                                                    data-bs-toggle="tab" aria-expanded="false"
+                                                    aria-controls="exportCollapse">Export</a>
+                                            </div>
+                                        </div><!-- end col-->
                                     </div>
 
-                                    <div class="row justify-content-end">
-                                        <div class="col-auto">
-                                            <button type="button" class="btn btn-danger">
-                                                <i class="mdi mdi-autorenew me-1"></i><span>Reset</span>
-                                            </button>
-                                            <button type="button" class="btn btn-primary">
-                                                <i class="mdi mdi-filter-outline me-1"></i><span>Apply</span>
-                                            </button>
+                                    <!-- Filter start -->
+                                    <div class="row collapse hide" id="filterCollapse">
+                                        <div class="col">
+                                            <div class="card card-body">
+                                                <form>
+                                                    <div class="row g-2 mb-2">
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="select-plan" class="form-label">Plant</label>
+                                                            <select class="form-select" id="select-plant">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="select-location"
+                                                                class="form-label">Location</label>
+                                                            <select class="form-select" id="select-location">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-end">
+                                                        <div class="col-auto">
+                                                            <button type="submit" class="btn btn-danger">
+                                                                <i class="mdi mdi-autorenew me-1"></i><span>Reset</span>
+                                                            </button>
+                                                            <button type="submit" class="btn btn-primary">
+                                                                <i
+                                                                    class="mdi mdi-filter-outline me-1"></i><span>Apply</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
+                                    <!-- Filter end -->
+
+                                    <!-- Import start -->
+                                    <div class="row collapse hide" id="importCollapse">
+                                        <div class="col">
+                                            <div class="card card-body">
+                                                <form>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-8 mb-2">
+                                                            <input type="file" id="fileinput" class="form-control mb-1">
+                                                            <span class="font-14 text-muted">Download Template
+                                                                <a href="">click here</a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col mb-2">
+                                                            <button type="submit" class="btn btn-success">
+                                                                <i
+                                                                    class="mdi mdi-folder-multiple-outline me-1"></i><span>Submit</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Import end -->
+
+                                    <!-- Export start -->
+                                    <div class="row collapse hide" id="exportCollapse">
+                                        <div class="col">
+                                            <div class="card card-body">
+                                                <form>
+                                                    <div class="row g-2 mb-2">
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="select-plan" class="form-label">Plant</label>
+                                                            <select class="form-select" id="select-plant">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="select-location"
+                                                                class="form-label">Location</label>
+                                                            <select class="form-select" id="select-location">
+                                                                <option selected>All</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row justify-content-end">
+                                                        <div class="col-auto">
+                                                            <button type="submit" class="btn btn-danger mb-1 me-1">
+                                                                <i class="mdi mdi-autorenew me-1"></i><span>Reset</span>
+                                                            </button>
+                                                            <button type="submit" class="btn btn-soft-success mb-1">
+                                                                <i class="mdi mdi-download me-1"></i><span>XLS</span>
+                                                            </button>
+                                                            <button type="submit" class="btn btn-soft-danger mb-1">
+                                                                <i class="mdi mdi-download me-1"></i><span>PDF</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Export end -->
+
+                                    <div class="table-responsive">
+                                        <table class="table table-centered w-100 dt-responsive nowrap"
+                                            id="products-datatable">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Asset ID</th>
+                                                    <th>Description</th>
+                                                    <th>Condition</th>
+                                                    <th>Last Update</th>
+                                                    <th style="width: 85px;">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">
+                                                        INV-00505
+                                                    </td>
+                                                    <td>
+                                                        202035
+                                                    </td>
+                                                    <td>
+                                                        TV 21"
+                                                    </td>
+                                                    <td>
+                                                        30 April 2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-success-lighten">Bisa Digunakan</span>
+                                                    </td>
+
+                                                    <td class="table-action">
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-eye"></i></a>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-square-edit-outline"></i></a>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-delete"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">
+                                                        INV-00527
+                                                    </td>
+                                                    <td>
+                                                        202036
+                                                    </td>
+                                                    <td>
+                                                        LEMARI DOC
+                                                    </td>
+                                                    <td>
+                                                        18 Mei 2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-warning-lighten">Digunakan - Kondisi
+                                                            Sedang</span>
+                                                    </td>
+
+                                                    <td class="table-action">
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-eye"></i></a>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-square-edit-outline"></i></a>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-delete"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">
+                                                        410000223
+                                                    </td>
+                                                    <td>
+                                                        202302
+                                                    </td>
+                                                    <td>
+                                                        EWS UNIT BERIKUT INST DI CLP
+                                                    </td>
+                                                    <td>
+                                                        30 April 2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-danger-lighten">Rusak</span>
+                                                    </td>
+
+                                                    <td class="table-action">
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-eye"></i></a>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-square-edit-outline"></i></a>
+                                                        <a href="javascript:void(0);" class="action-icon"> <i
+                                                                class="mdi mdi-delete"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
                     </div>
-                    <!-- Filter end -->
-
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i class="mdi mdi-folder-check-outline widget-icon"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Total Assets</h5>
-                                    <h3 class="mt-3 mb-3">6,387</h3>
-                                    <p class="mb-0 text-muted">
-                                        <span class="text-warning me-2"><i class="mdi mdi-arrow-left-right"></i>
-                                            0.20%</span>
-                                    </p>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i
-                                            class="mdi mdi-book-arrow-up-outline widget-icon bg-success-lighten text-success"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Book Value</h5>
-                                    <h3 class="mt-3 mb-3">Rp. 434.968.281.690</h3>
-                                    <p class="mb-0 text-muted">
-                                        <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i>
-                                            4.87%</span>
-                                    </p>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i
-                                            class="mdi mdi-alert-circle-check-outline widget-icon bg-warning-lighten text-warning"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Depresiasi</h5>
-                                    <h3 class="mt-3 mb-3">Rp. -547.168.551.729</h3>
-                                    <p class="mb-0 text-muted">
-                                        <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i>
-                                            -2.19%</span>
-                                    </p>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-                    </div> <!-- end row -->
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div dir="ltr">
-                                        <div id="basic-bar" class="apex-charts" data-colors="#acc42a"></div>
-                                    </div>
-                                </div>
-                                <!-- end card body-->
-                            </div><!-- end card -->
-                        </div><!-- end col-->
-                    </div><!-- end row -->
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div dir="ltr">
-                                        <div id="simple-donut" class="apex-charts"
-                                            data-colors="#727cf5,#6c757d,#0acf97,#fa5c7c,#e3eaef"></div>
-                                    </div>
-                                </div><!-- end card body-->
-                            </div><!-- end card -->
-                        </div> <!-- end col-->
-                    </div><!-- end row -->
-
+                    <!-- Table End -->
                 </div>
                 <!-- container -->
 
@@ -1297,30 +1411,20 @@
     </div>
 
     <!-- Vendor js -->
-    <script src="../assets/js/vendor.min.js"></script>
+    <script src="../../assets/js/vendor.min.js"></script>
 
-    <!-- Daterangepicker js -->
-    <script src="../assets/vendor/daterangepicker/moment.min.js"></script>
-    <script src="../assets/vendor/daterangepicker/daterangepicker.js"></script>
+    <!-- Datatable js -->
+    <script src="../../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+    <script src="../../assets/vendor/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js"></script>
 
-    <!-- Apex Charts js -->
-    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
-
-    <!-- Vector Map js -->
-    <script src="../assets/vendor/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="../assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
-
-    <!-- Dashboard App js -->
-    <script src="../assets/js/pages/demo.dashboard.js"></script>
+    <!-- Product Demo App js -->
+    <script src="../../assets/js/pages/demo.products.js"></script>
 
     <!-- App js -->
-    <script src="../assets/js/app.min.js"></script>
-
-    <!-- Apex Chart Bar Demo js -->
-    <script src="../assets/js/pages/demo.apex-bar.js"></script>
-
-    <!-- Apex Chart Pie Demo js -->
-    <script src="../assets/js/pages/demo.apex-pie.js"></script>
+    <script src="../../assets/js/app.min.js"></script>
 
 </body>
 
