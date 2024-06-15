@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Detail Kendaraan | Asset Management | Pertamina Lubricants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Asset Management | Pertamina Lubricants" name="description" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="assets/css/style/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icons css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Container start -->
+    <div class="content-container">
+
+        <!-- Header start -->
+        <div class="navbar-primary">
+            <div class="row justify-content-between h-100 mx-0">
+                <div class="col d-flex align-self-center ms-2">
+                    <a href="javascript:history.back()">
+                        <img src="assets/images/arrow-left.png" class="icon-back" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="assets/images/logo-pertamina-lubricants.png" class="logo-header ms-3"
+                            alt="Asset Management">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Header end -->
+
+        <!-- Content start -->
+        <div class="container content-asset-list">
+
+            <div class="row my-2 px-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/kendaraan.html">Kendaraan</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- card detail start -->
+            <div class="row">
+                <div class="col-auto">
+                    <img src="assets/images/icons/kendaraan-icon.png" width="90" alt="">
+                </div>
+                <div class="col px-0">
+                    <div class="asset-item d-flex">
+                        <table class="table table-borderless mb-0">
+                            <tbody>
+                                <tr>
+                                    <td class="detail-text p-0 pb-1">Merk</td>
+                                    <td class="detail-text p-0 pb-1">Avanza x203 1500cc</td>
+                                </tr>
+                                <tr>
+                                    <td class="detail-text p-0 pb-1">Type</td>
+                                    <td class="detail-text p-0 pb-1">Toyota</td>
+                                </tr>
+                                <tr>
+                                    <td class="detail-text p-0 pb-1">Tahun</td>
+                                    <td class="detail-text p-0 pb-1">Jan 2020</td>
+                                </tr>
+                                <tr>
+                                    <td class="detail-text p-0 pb-1">BBM</td>
+                                    <td class="detail-text p-0 pb-1">Pertamax</td>
+                                </tr>
+                                <tr>
+                                    <td class="detail-text p-0 pb-1">No. Kendaraan</td>
+                                    <td class="detail-text p-0 pb-1">B 1234 KJO</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-1">
+                        <a href="/kendaraan-history.html" class="detail-text text-primary">Lihat Riwayat Penggunaan</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card detail end -->
+
+            <!-- detail aset start -->
+            <form class="p-2">
+                <div class="mb-3">
+                    <label for="assign-to" class="form-label">Assign To</label>
+                    <input type="text" class="form-control" id="assign-to" placeholder="Name" value="John Doe" disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="fungsi" class="form-label">Fungsi</label>
+                    <input type="text" class="form-control" id="fungsi" placeholder="Fungsi" value="General Affairs"
+                        disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="direktorat" class="form-label">Direktorat</label>
+                    <input type="text" class="form-control" id="direktorat" placeholder="Direktorat"
+                        value="Finance & Business Support" disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="duration" class="form-label">Jangka Waktu Sewa</label>
+                    <input type="text" class="form-control" id="duration" placeholder="Jangka Waktu Sewa"
+                        value="1 Tahun" disabled>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col mb-3">
+                        <label for="start-date" class="form-label">Tanggal Sewa</label>
+                        <input type="text" class="form-control" id="start-date" placeholder="Tanggal Sewa"
+                            value="12/04/2024" disabled>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="end-date" class="form-label">Masa Berlaku</label>
+                        <input type="text" class="form-control" id="end-date" placeholder="Masa Berlaku"
+                            value="11/04/2025" disabled>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="location" class="form-label">Lokasi</label>
+                    <input type="text" class="form-control" id="location" placeholder="Lokasi" value="Grha Pertamina"
+                        disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="total-bbm" class="form-label">Total BBM</label>
+                    <input type="text" class="form-control" id="total-bbm" placeholder="Total BBM" value="Rp. 500,000"
+                        disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="total-bbm" class="form-label">Total non BBM</label>
+                    <input type="text" class="form-control" id="total-non-bbm" placeholder="Total non BBM"
+                        value="Rp. 200,000" disabled>
+                </div>
+
+                <div>
+                    <div class="mb-2">
+                        <a href="/kendaraan-history.html" class="btn btn-primary w-100 text-white">Riwayat
+                            Penggunaan</a>
+                    </div>
+                    <div class="mb-2">
+                        <button onclick="history.back()" type="button" class="btn btn-light w-100"
+                            data-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </form>
+            <!-- detail aset end -->
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer start -->
+        <div class="footer-body">
+            <div class="row justify-content-between">
+                <img src="assets/images/svg/logo-mypertamina-01.svg" class="img-footer-left" alt="">
+                <img src="assets/images/svg/logo-mypertamina-02.svg" class="img-footer-right" alt="">
+            </div>
+        </div>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Container end -->
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

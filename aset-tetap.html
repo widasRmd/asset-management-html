@@ -14,6 +14,11 @@
     <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
     <link href="assets/css/style/main.css" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"
+        integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Icons css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 
@@ -26,8 +31,8 @@
 
         <!-- Header start -->
         <div class="navbar-primary">
-            <div class="row justify-content-between h-100">
-                <div class="col d-flex align-self-center ms-3">
+            <div class="row justify-content-between h-100 mx-0">
+                <div class="col d-flex align-self-center ms-2">
                     <a href="javascript:history.back()">
                         <img src="assets/images/arrow-left.png" class="icon-back" alt="">
                     </a>
@@ -41,7 +46,7 @@
                         aria-controls="offcanvasBottom">
                         <img src="assets/images/svg/btn-filter.svg" width="36px" alt="">
                     </a>
-                    <a href="/aset-tetap-add.html" class="me-3">
+                    <a href="/aset-tetap-add.html" class="me-2">
                         <img src="assets/images/svg/btn-add.svg" width="36px" alt="">
                     </a>
                 </div>
@@ -319,11 +324,33 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div> <!-- end offcanvas-header-->
 
-        <div class="offcanvas-body">
+        <div class="offcanvas-body" style="overflow: visible;">
             <form class="p-2">
                 <div class="mb-3">
                     <label for="filter-year" class="form-label">Tahun</label>
-                    <select class="form-select form-control-light" id="filter-year">
+                    <!-- <select class="form-select form-control-light" id="filter-year">
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                    </select> -->
+                    <select class="form-select form-control-light" id="filter-year" data-live-search="true">
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
                         <option>2024</option>
                         <option>2023</option>
                         <option>2022</option>
@@ -334,12 +361,32 @@
 
                 <div class="mb-3">
                     <label for="filter-location" class="form-label">Lokasi</label>
-                    <select class="form-select form-control-light" id="filter-location">
+                    <!-- <select class="form-select form-control-light" id="filter-location">
                         <option selected>All Location</option>
                         <option>Lokasi 1</option>
                         <option>Lokasi 2</option>
                         <option>Lokasi 3</option>
                         <option>Lokasi 4</option>
+                        <option>Lokasi 5</option>
+                        <option>Lokasi 6</option>
+                        <option>Lokasi 7</option>
+                    </select> -->
+                    <select class="form-select form-control-light" id="filter-location" data-live-search="true">
+                        <option selected>All Location</option>
+                        <option>Lokasi 1</option>
+                        <option>Lokasi 2</option>
+                        <option>Lokasi 3</option>
+                        <option>Lokasi 4</option>
+                        <option>Lokasi 5</option>
+                        <option>Lokasi 6</option>
+                        <option>Lokasi 7</option>
+                        <option>Lokasi 1</option>
+                        <option>Lokasi 2</option>
+                        <option>Lokasi 3</option>
+                        <option>Lokasi 4</option>
+                        <option>Lokasi 5</option>
+                        <option>Lokasi 6</option>
+                        <option>Lokasi 7</option>
                     </select>
                 </div>
 
@@ -351,12 +398,18 @@
     </div>
     <!-- filter offcanvas end-->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"
+        integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Vendor js -->
     <script src="assets/js/vendor.min.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
+
+
+
 
 </body>
 
