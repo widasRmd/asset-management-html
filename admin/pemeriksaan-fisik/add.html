@@ -10,6 +10,9 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="../../assets/images/favicon.ico">
 
+    <!-- Select2 css -->
+    <link href="../../assets/vendor/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Theme Config Js -->
     <script src="../../assets/js/hyper-config.js"></script>
 
@@ -18,12 +21,6 @@
 
     <!-- Icons css -->
     <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- Datatable css -->
-    <link href="../../assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet"
-        type="text/css" />
-    <link href="../../assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet"
-        type="text/css" />
 </head>
 
 <body>
@@ -489,9 +486,73 @@
 
                     <!-- Table Start -->
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col">
                             <div class="card">
                                 <div class="card-body">
+
+                                    <form>
+                                        <div class="row justify-content-center">
+                                            <div class="col-sm-10 col-md-8 col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="year" class="form-label">Tahun</label>
+                                                    <select class="form-select" id="year">
+                                                        <option>2024</option>
+                                                        <option>2023</option>
+                                                        <option>2022</option>
+                                                        <option>2021</option>
+                                                        <option>2020</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label">Pilih Aset</label>
+                                                    <select class="select2 form-control select2-multiple"
+                                                        data-toggle="select2" multiple="multiple"
+                                                        data-placeholder="Choose ...">
+                                                        <optgroup label="Aset Tetap">
+                                                            <option>Aset Tetap 1</option>
+                                                            <option>Aset Tetap 2</option>
+                                                            <option>Aset Tetap 3</option>
+                                                            <option>Aset Tetap 4</option>
+                                                        </optgroup>
+                                                        <optgroup label="Tanah & Bangunan">
+                                                            <option>Tanah & Bangunan 1</option>
+                                                            <option>Tanah & Bangunan 2</option>
+                                                            <option>Tanah & Bangunan 3</option>
+                                                            <option>Tanah & Bangunan 4</option>
+                                                        </optgroup>
+                                                        <optgroup label="Kendaraan">
+                                                            <option>Kendaraan 1</option>
+                                                            <option>Kendaraan 2</option>
+                                                            <option>Kendaraan 3</option>
+                                                            <option>Kendaraan 4</option>
+                                                        </optgroup>
+                                                        <optgroup label="BBM & Non BBM">
+                                                            <option>BBM 1</option>
+                                                            <option>BBM 2</option>
+                                                            <option>BBM 3</option>
+                                                            <option>BBM 4</option>
+                                                        </optgroup>
+                                                        <optgroup label="Furniture">
+                                                            <option>Furniture 1</option>
+                                                            <option>Furniture 2</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+
+                                                <div class="row g-2 mb-3">
+                                                    <div class="col">
+                                                        <button onclick="history.back()" type="button"
+                                                            class="btn btn-light w-100"
+                                                            data-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" class="btn btn-primary w-100">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
 
                                 </div> <!-- end card-body-->
                             </div> <!-- end card-->
@@ -1183,18 +1244,12 @@
     <!-- Vendor js -->
     <script src="../../assets/js/vendor.min.js"></script>
 
-    <!-- Datatable js -->
-    <script src="../../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../../assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-    <script src="../../assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-    <script src="../../assets/vendor/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js"></script>
-
-    <!-- Product Demo App js -->
-    <script src="../../assets/js/pages/demo.products.js"></script>
+    <!--  Select2 Plugin Js -->
+    <script src="../../assets/vendor/select2/js/select2.min.js"></script>
 
     <!-- App js -->
     <script src="../../assets/js/app.min.js"></script>
+
 
 </body>
 
