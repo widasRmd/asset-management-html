@@ -10,6 +10,9 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+    <!-- Select2 css -->
+    <link href="assets/vendor/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
     <!-- App css -->
     <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
     <link href="assets/css/style/main.css" rel="stylesheet" type="text/css" />
@@ -70,14 +73,77 @@
                     <div class="tab-pane show active" id="single">
                         <form class="p-2">
                             <div class="mb-3">
-                                <label for="asset-name" class="form-label">Asset Name</label>
-                                <input type="text" class="form-control" id="asset-name" placeholder="Enter asset name">
+                                <label class="form-label mb-2">Asset Type</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="main-asset-radio" name="asset-type"
+                                        class="form-check-input">
+                                    <label class="form-check-label" for="main-asset-radio">Main Asset</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="sub-asset-radio" name="asset-type" class="form-check-input">
+                                    <label class="form-check-label" for="sub-asset-radio">Sub Asset</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Main Asset No.</label>
+                                <select class="form-control select2" data-toggle="select2">
+                                    <option>- Select Asset -</option>
+                                    <option value="500000456">500000456</option>
+                                    <option value="500000457">500000457</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="no-asset" class="form-label">No. Asset</label>
+                                <input type="text" class="form-control" id="no-asset" placeholder="Enter no. asset">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sub-number" class="form-label">Sub Number</label>
+                                <input type="number" class="form-control" id="sub-number"
+                                    placeholder="Enter sub number">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Balsh acct APC</label>
+                                <select class="form-select" id="balsh-acct-apc">
+                                    <option>- Select Balsh acct APC -</option>
+                                    <option>Balsh acct APC 1</option>
+                                    <option>Balsh acct APC 2</option>
+                                    <option>Balsh acct APC 3</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Asset Class</label>
+                                <select class="form-select" id="asset-class">
+                                    <option>- Select Asset Class -</option>
+                                    <option>Asset Class 1</option>
+                                    <option>Asset Class 2</option>
+                                    <option>Asset Class 3</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Cost Center</label>
+                                <select class="form-select" id="cost-center">
+                                    <option>- Select Cost Center -</option>
+                                    <option>Cost Center 1</option>
+                                    <option>Cost Center 2</option>
+                                    <option>Cost Center 3</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="capitalized-on" class="form-label">Capitalized On</label>
+                                <input type="date" class="form-control" id="capitalized-on">
                             </div>
 
                             <div class="mb-3">
                                 <label for="asset-description" class="form-label">Asset Description</label>
-                                <input type="text" class="form-control" id="asset-description"
-                                    placeholder="Enter asset description">
+                                <textarea class="form-control" id="asset-description" rows="2"
+                                    placeholder="Enter asset description"></textarea>
                             </div>
 
                             <div class="mb-3">
@@ -91,8 +157,34 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="book-vol" class="form-label">Book Vol</label>
-                                <input type="number" class="form-control" id="book-vol" placeholder="0">
+                                <label for="book-val" class="form-label">Book Val</label>
+                                <input type="number" class="form-control" id="book-val" placeholder="0">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="original-asset" class="form-label">Original Asset</label>
+                                <input type="text" class="form-control" id="original-asset"
+                                    placeholder="Enter original asset">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Evaluation Group 5</label>
+                                <select class="form-select" id="evaluation-group-5">
+                                    <option>- Select Evaluation Group 5 -</option>
+                                    <option>Evaluation Group A</option>
+                                    <option>Evaluation Group B</option>
+                                    <option>Evaluation Group C</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Evaluation Group 1</label>
+                                <select class="form-select" id="evaluation-group-1">
+                                    <option>- Select Evaluation Group 1 -</option>
+                                    <option>Evaluation Group A</option>
+                                    <option>Evaluation Group B</option>
+                                    <option>Evaluation Group C</option>
+                                </select>
                             </div>
 
                             <div class="mb-3">
@@ -106,9 +198,21 @@
                             </div>
 
                             <div class="mb-3">
+                                <label for="serial-number" class="form-label">Serial Number</label>
+                                <input type="text" class="form-control" id="serial-number"
+                                    placeholder="Enter serial number">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="useful-life" class="form-label">Useful Life</label>
+                                <input type="text" class="form-control" id="useful-life"
+                                    placeholder="Enter useful life">
+                            </div>
+
+                            <div class="mb-3">
                                 <label class="form-label">Plant</label>
                                 <select class="form-select" id="asset-plant">
-                                    <option>- Select -</option>
+                                    <option>- Select Plant -</option>
                                     <option>Plant A</option>
                                     <option>Plant B</option>
                                     <option>Plant C</option>
@@ -131,94 +235,175 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="asset-photos" class="form-label">Photo</label>
-                                <div action="/" method="post" class="dropzone" id="asset-photos" data-plugin="dropzone"
-                                    data-previews-container="#file-previews-single"
-                                    data-upload-preview-template="#uploadPreview">
-                                    <div class="fallback">
-                                        <input name="file" type="file" multiple />
-                                    </div>
+                                <label class="form-label mb-2">Site Visit 2021</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="yes-visit" name="site-visit" class="form-check-input">
+                                    <label class="form-check-label" for="yes-visit">Ya</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="no-visit" name="site-visit" class="form-check-input">
+                                    <label class="form-check-label" for="no-visit">Tidak</label>
+                                </div>
+                            </div>
 
-                                    <div class="dz-message needsclick">
-                                        <i class="h1 text-muted ri-upload-cloud-2-line"></i>
-                                        <h5>Drop files here or click to upload.</h5>
+                            <!-- Lat Long -->
+                            <div class="accordion accordion-flush mb-3" id="accordionLatlong">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="latlongHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne"
+                                            style="border-bottom: solid 0.5px #d3d3d3;">
+                                            Geo Location
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="latlongHeading" data-bs-parent="#accordionLatlong">
+
+                                        <div class="mt-2 mb-3">
+                                            <label for="longitude" class="form-label">Longitude</label>
+                                            <input type="text" class="form-control" id="longitude"
+                                                placeholder="Enter longitude">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="latitude" class="form-label">Latitude</label>
+                                            <input type="text" class="form-control" id="latitude"
+                                                placeholder="Enter latitude">
+                                        </div>
+
                                     </div>
                                 </div>
+                            </div>
 
-                                <!-- Preview -->
-                                <div class="dropzone-previews mt-3" id="file-previews-single"></div>
+                            <!-- Attachment -->
+                            <div class="accordion accordion-flush mb-3" id="accordionAttachment">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="attachmentHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo"
+                                            style="border-bottom: solid 0.5px #d3d3d3;">
+                                            Document Attachment
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="attachmentHeading" data-bs-parent="#accordionAttachment">
 
-                                <div class="d-none" id="uploadPreview">
-                                    <div class="p-1">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light"
-                                                    alt="">
+                                        <div class="mt-2 mb-3">
+                                            <label for="asset-photos" class="form-label">Photo</label>
+                                            <div action="/" method="post" class="dropzone" id="asset-photos"
+                                                data-plugin="dropzone" data-previews-container="#file-previews-single"
+                                                data-upload-preview-template="#uploadPreview">
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple />
+                                                </div>
+
+                                                <div class="dz-message needsclick">
+                                                    <i class="h1 text-muted ri-upload-cloud-2-line"></i>
+                                                    <h5>Drop files here or click to upload.</h5>
+                                                </div>
                                             </div>
-                                            <div class="col ps-0">
-                                                <a href="javascript:void(0);" class="text-muted fw-bold"
-                                                    data-dz-name></a>
-                                                <p class="mb-0" data-dz-size></p>
-                                            </div>
-                                            <div class="col-auto">
-                                                <!-- Button -->
-                                                <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
-                                                    <i class="ri-close-line"></i>
-                                                </a>
+
+                                            <!-- Preview -->
+                                            <div class="dropzone-previews mt-3" id="file-previews-single"></div>
+
+                                            <div class="d-none" id="uploadPreview">
+                                                <div class="p-1">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-auto">
+                                                            <img data-dz-thumbnail src="#"
+                                                                class="avatar-sm rounded bg-light" alt="">
+                                                        </div>
+                                                        <div class="col ps-0">
+                                                            <a href="javascript:void(0);" class="text-muted fw-bold"
+                                                                data-dz-name></a>
+                                                            <p class="mb-0" data-dz-size></p>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <!-- Button -->
+                                                            <a href="" class="btn btn-link btn-lg text-muted"
+                                                                data-dz-remove>
+                                                                <i class="ri-close-line"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">Building</label>
-                                <select class="form-select" id="building">
-                                    <option>- Select Building -</option>
-                                    <option>Building A</option>
-                                    <option>Building B</option>
-                                    <option>Building C</option>
-                                </select>
-                            </div>
+                            <!-- Additional -->
+                            <div class="accordion accordion-flush mb-3" id="accordionAdditional">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="additionalHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree"
+                                            style="border-bottom: solid 0.5px #d3d3d3;">
+                                            Additional Information
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="additionalHeading" data-bs-parent="#accordionAdditional">
 
-                            <div class="mb-3">
-                                <label for="floor" class="form-label">Floor</label>
-                                <input type="text" class="form-control" id="floor" placeholder="Enter floor">
-                            </div>
+                                        <div class="mt-2 mb-3">
+                                            <label class="form-label">Building</label>
+                                            <input type="text" class="form-control" id="building"
+                                                placeholder="Enter building">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="brand" class="form-label">Brand</label>
-                                <input type="text" class="form-control" id="brand" placeholder="Enter brand">
-                            </div>
+                                        <div class="mb-3">
+                                            <label for="floor" class="form-label">Floor</label>
+                                            <input type="text" class="form-control" id="floor"
+                                                placeholder="Enter floor">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="type" class="form-label">Type</label>
-                                <input type="text" class="form-control" id="type" placeholder="Enter type">
-                            </div>
+                                        <div class="mb-3">
+                                            <label for="brand" class="form-label">Brand</label>
+                                            <input type="text" class="form-control" id="brand"
+                                                placeholder="Enter brand">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="dimension" class="form-label">Dimension</label>
-                                <input type="text" class="form-control" id="dimension" placeholder="Enter dimension">
-                            </div>
+                                        <div class="mb-3">
+                                            <label for="type" class="form-label">Type</label>
+                                            <input type="text" class="form-control" id="type" placeholder="Enter type">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="capacity" class="form-label">Capacity</label>
-                                <input type="text" class="form-control" id="capacity" placeholder="Enter capacity">
-                            </div>
+                                        <div class="mb-3">
+                                            <label for="dimension" class="form-label">Dimension</label>
+                                            <input type="text" class="form-control" id="dimension"
+                                                placeholder="Enter dimension">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="asset-pic" class="form-label">Asset PIC</label>
-                                <input type="text" class="form-control" id="asset-pic" placeholder="Enter asset PIC">
-                            </div>
+                                        <div class="mb-3">
+                                            <label for="capacity" class="form-label">Capacity</label>
+                                            <input type="text" class="form-control" id="capacity"
+                                                placeholder="Enter capacity">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="Enter address">
-                            </div>
+                                        <div class="mb-3">
+                                            <label for="asset-pic" class="form-label">Asset PIC</label>
+                                            <input type="text" class="form-control" id="asset-pic"
+                                                placeholder="Enter asset PIC">
+                                        </div>
 
-                            <div class="mb-3">
-                                <label for="asset-note" class="form-label">Note</label>
-                                <textarea class="form-control" id="asset-note" rows="3"></textarea>
+                                        <div class="mb-3">
+                                            <label for="address" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="address"
+                                                placeholder="Enter address">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="asset-note" class="form-label">Note</label>
+                                            <textarea class="form-control" id="asset-note" rows="3"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="row g-2 mb-3">
@@ -314,6 +499,9 @@
 
     <!-- Vendor js -->
     <script src="assets/js/vendor.min.js"></script>
+
+    <!--  Select2 Plugin Js -->
+    <script src="assets/vendor/select2/js/select2.min.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>

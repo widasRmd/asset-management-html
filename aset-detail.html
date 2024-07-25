@@ -79,6 +79,10 @@
                                         <td class="asset-value text-end">TV 21"</td>
                                     </tr>
                                     <tr>
+                                        <td class="asset-value">Capitalized Date</td>
+                                        <td class="asset-value text-end">14 Dec 2022</td>
+                                    </tr>
+                                    <tr>
                                         <td class="asset-value">Acquis Val</td>
                                         <td class="asset-value text-end">0</td>
                                     </tr>
@@ -105,122 +109,245 @@
             <!-- detail aset start -->
             <form class="p-2">
                 <div class="mb-3">
-                    <label for="last-asset-location" class="form-label">Last Update Location</label>
-                    <input type="text" class="form-control" id="last-asset-location" placeholder="Enter location"
-                        value="Jl. Mayor Oking No.4, Cibinong, Bogor" disabled>
+                    <label class="form-label mb-2">Asset Type</label><br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="main-asset-radio" name="asset-type" class="form-check-input" disabled
+                            checked>
+                        <label class="form-check-label" for="main-asset-radio">Main Asset</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="sub-asset-radio" name="asset-type" class="form-check-input" disabled>
+                        <label class="form-check-label" for="sub-asset-radio">Sub Asset</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Main Asset No.</label>
+                    <input type="text" class="form-control" value="500000456" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="no-asset" class="form-label">No. Asset</label>
+                    <input type="text" class="form-control" id="no-asset" value="500000456-1" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="sub-number" class="form-label">Sub Number</label>
+                    <input type="text" class="form-control" id="sub-number" value="123456789" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Balsh acct APC</label>
+                    <input type="text" class="form-control" value="Balsh acct APC 1" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Asset Class</label>
+                    <input type="text" class="form-control" value="Asset Class 1" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Cost Center</label>
+                    <input type="text" class="form-control" value="Cost Center 1" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="original-asset" class="form-label">Original Asset</label>
+                    <input type="text" class="form-control" value="-" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Evaluation Group 5</label>
+                    <input type="text" class="form-control" value="Evaluation Group A" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Evaluation Group 1</label>
+                    <input type="text" class="form-control" value="Evaluation Group 1" readonly>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Asset Condition</label>
-                    <select class="form-select" id="asset-condition" disabled>
-                        <option>Condition A</option>
-                    </select>
+                    <input type="text" class="form-control" value="Condition A" readonly>
                 </div>
 
                 <div class="mb-3">
-                    <label for="asset-name" class="form-label">Asset Name</label>
-                    <input type="text" class="form-control" id="asset-name" placeholder="Enter asset name"
-                        value="Nama Aset" disabled>
+                    <label for="serial-number" class="form-label">Serial Number</label>
+                    <input type="text" class="form-control" value="-" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="useful-life" class="form-label">Useful Life</label>
+                    <input type="text" class="form-control" value="-" readonly>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Plant</label>
-                    <select class="form-select" id="asset-plant" disabled>
-                        <option>Plant C</option>
-                    </select>
+                    <input type="text" class="form-control" value="Plant C" readonly>
                 </div>
 
                 <div class="mb-3">
-                    <label for="asset-location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="asset-location" placeholder="Enter location"
-                        value="Production Unit Gresik - Pelumas" disabled>
+                    <label class="form-label">Location</label>
+                    <input type="text" class="form-control" value="Location B" readonly>
                 </div>
 
                 <div class="mb-3">
                     <label for="room" class="form-label">Room</label>
-                    <input type="text" class="form-control" id="room" placeholder="Enter room" value="Rapat Enduro"
-                        disabled>
+                    <input type="text" class="form-control" value="-" readonly>
                 </div>
 
                 <div class="mb-3">
-                    <label for="asset-photos" class="form-label">Latest photo</label>
-                    <div class="d-flex">
-                        <img src="assets/images/example/example-1.jpg" class="img-fluid me-1" width="25%" alt="">
-                        <img src="assets/images/example/example-3.jpg" class="img-fluid me-1" width="25%" alt="">
-                        <img src="assets/images/example/example-2.jpg" class="img-fluid me-1" width="25%" alt="">
-                        <img src="assets/images/example/example-4.jpg" class="img-fluid me-1" width="25%" alt="">
+                    <label class="form-label mb-2">Site Visit 2021</label><br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="yes-visit" name="site-visit" class="form-check-input" disabled checked>
+                        <label class="form-check-label" for="yes-visit">Ya</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="no-visit" name="site-visit" class="form-check-input" disabled>
+                        <label class="form-check-label" for="no-visit">Tidak</label>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="asset-photos" class="form-label">Photo</label>
-                    <div class="d-flex">
-                        <img src="assets/images/example/example-1.jpg" class="img-fluid me-1" width="25%" alt="">
-                        <img src="assets/images/example/example-3.jpg" class="img-fluid me-1" width="25%" alt="">
-                        <img src="assets/images/example/example-2.jpg" class="img-fluid me-1" width="25%" alt="">
-                        <img src="assets/images/example/example-4.jpg" class="img-fluid me-1" width="25%" alt="">
+                <!-- LatLong -->
+                <div class="accordion accordion-flush mb-3" id="accordionLatlong">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="latlongHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                style="border-bottom: solid 0.5px #d3d3d3; background-color: rgb(235, 243, 255);">
+                                Geo Location
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="latlongHeading"
+                            data-bs-parent="#accordionLatlong">
+
+                            <div class="mt-2 mb-3">
+                                <label for="longitude" class="form-label">Longitude</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="latitude" class="form-label">Latitude</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="building" class="form-label">Building</label>
-                    <input type="text" class="form-control" id="building" placeholder="Enter building" value="-"
-                        disabled>
+                <!-- Attachment -->
+                <div class="accordion accordion-flush mb-3" id="accordionAttachment">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="attachmentHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+                                style="border-bottom: solid 0.5px #d3d3d3; background-color: rgb(235, 243, 255);">
+                                Document Attachment
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                            aria-labelledby="attachmentHeading" data-bs-parent="#accordionAttachment">
+
+                            <div class="mt-2 mb-3">
+                                <label for="asset-photos" class="form-label">Latest photo</label>
+                                <div class="d-flex">
+                                    <img src="assets/images/example/example-1.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                    <img src="assets/images/example/example-3.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                    <img src="assets/images/example/example-2.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                    <img src="assets/images/example/example-4.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-photos" class="form-label">Photo</label>
+                                <div class="d-flex">
+                                    <img src="assets/images/example/example-1.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                    <img src="assets/images/example/example-3.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                    <img src="assets/images/example/example-2.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                    <img src="assets/images/example/example-4.jpg" class="img-fluid me-1" width="25%"
+                                        alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="floor" class="form-label">Floor</label>
-                    <input type="text" class="form-control" id="floor" placeholder="Enter floor" value="-" disabled>
+                <!-- Additional -->
+                <div class="accordion accordion-flush mb-3" id="accordionAdditional">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="additionalHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+                                style="border-bottom: solid 0.5px #d3d3d3; background-color: rgb(235, 243, 255);">
+                                Additional Information
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse show"
+                            aria-labelledby="additionalHeading" data-bs-parent="#accordionAdditional">
+
+                            <div class="mt-2 mb-3">
+                                <label class="form-label">Building</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="floor" class="form-label">Floor</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="brand" class="form-label">Brand</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="type" class="form-label">Type</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="dimension" class="form-label">Dimension</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="capacity" class="form-label">Capacity</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-pic" class="form-label">Asset PIC</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" value="-" readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asset-note" class="form-label">Note</label>
+                                <textarea class="form-control" id="asset-note" rows="3" readonly>lorem ipsum</textarea>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="brand" class="form-label">Brand</label>
-                    <input type="text" class="form-control" id="brand" placeholder="Enter brand" value="-" disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="type" class="form-label">Type</label>
-                    <input type="text" class="form-control" id="type" placeholder="Enter type" value="-" disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="dimension" class="form-label">Dimension</label>
-                    <input type="text" class="form-control" id="dimension" placeholder="Enter dimension" value="-"
-                        disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="capacity" class="form-label">Capacity</label>
-                    <input type="text" class="form-control" id="capacity" placeholder="Enter capacity" value="-"
-                        disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="asset-pic" class="form-label">Asset PIC</label>
-                    <input type="text" class="form-control" id="asset-pic" placeholder="Enter asset PIC" value="-"
-                        disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Enter address" value="-" disabled>
-                </div>
-
-                <div class="mb-3">
-                    <label for="asset-note" class="form-label">Note</label>
-                    <textarea class="form-control" id="asset-note" rows="3" disabled>
-                    </textarea>
-                </div>
-
-                <!-- <div class="row g-2 mb-3">
+                <div class="row g-2 mb-3">
                     <div class="col">
-                        <button onclick="history.back()" type="button" class="btn btn-light w-100"
-                            data-dismiss="modal">Cancel</button>
+                        <button onclick="history.back()" type="button" class="btn btn-primary w-100"
+                            data-dismiss="modal">Back</button>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary w-100">Create</button>
-                    </div>
-                </div> -->
+                </div>
             </form>
             <!-- detail aset end -->
         </div>
